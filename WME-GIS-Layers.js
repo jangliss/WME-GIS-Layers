@@ -309,6 +309,7 @@
 // @connect      mecklenburgcountync.gov
 // @connect      mercercountyohio.org
 // @connect      mesacounty.us
+// @connect      cityofmesquite.com
 // @connect      miamidade.gov
 // @connect      midmogis.org
 // @connect      missoulacounty.us
@@ -12609,6 +12610,14 @@ Doesn't have a Shape field.
         //         state:  'TX',
         //         style:  DEFAULT_PARCEL_STYLE },
 
+        {name:  'Mesquite City - Parcels',
+         id:  'tx-mesquite-city-parcels',
+         url:  'http://gispub.cityofmesquite.com:6080/arcgis/rest/services/cached_services/parcels/MapServer/3/',
+         labelFields:  ['MSADD'],
+         processLabel:  function(label) { return label.replace(_regexReplace.r5, '$1\n$2'); },
+         state:  'TX',
+         style:  DEFAULT_PARCEL_STYLE },
+        
         {name:  'Midland City - Parcels',
          id:  'tx-midland-city-parcels',
          url:  'https://midland.newedgeservices.com/arcgis/rest/services/Cityworks/BaseMap_and_Trans/MapServer/2',
