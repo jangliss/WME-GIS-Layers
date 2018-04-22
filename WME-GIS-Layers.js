@@ -12349,6 +12349,14 @@ Doesn't have a Shape field.
          state:  'TX',
          style:  DEFAULT_PARCEL_STYLE },
 
+        {name:  'Hidalgo Co - Parcels',
+         id:  'tx-hidalgo-co-parcels',
+         url:  'http://hidgis.co.hidalgo.tx.us/arcgis/rest/services/Basemap020118/MapServer/5',
+         labelFields:  ['addr1', 'addr2', 'addr3' ],
+         processLabel:  function(label) { return label.replace(_regexReplace.r5, '$1\n$2'); },
+         state:  'TX',
+         style:  DEFAULT_PARCEL_STYLE },
+
         //        {name:  'Hockley Co - Parcels',
         //         id:  'tx-hockley-co-parcels',
         //         url:  'https://gis.bisconsultants.com/bisgis/rest/services/HockleyWeb/MapServer/0',
